@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Бабарицкий Павел s4107-->
+<!ELEMENT таблица (студент)+>
+<!ELEMENT студент (отметка)+>
+<!ELEMENT отметка (#PCDATA)>
+
+<!ATTLIST студент имя ID #REQUIRED>
+<!ATTLIST отметка дисциплина CDATA #REQUIRED>
