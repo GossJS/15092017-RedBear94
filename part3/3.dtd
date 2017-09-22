@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Бабарицкий Павел s4107-->
+<!ELEMENT info (ip | visits | ips)+>
+<!ELEMENT ip EMPTY>
+<!ELEMENT visits (computers | mobile_devices)+>
+<!ELEMENT computers (os+)>
+<!ELEMENT os (#PCDATA)>
+<!ELEMENT mobile_devices (device+)>
+<!ELEMENT device (#PCDATA)>
+<!ELEMENT ips (ip+)>
+
+<!ATTLIST ip
+  title CDATA #IMPLIED
+  addr CDATA #REQUIRED
+  frequency CDATA #REQUIRED>
+<!ATTLIST os name CDATA #REQUIRED>
+<!ATTLIST device name CDATA #REQUIRED>
+<!ATTLIST ips title CDATA #REQUIRED>
