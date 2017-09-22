@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Бабарицкий Павел s4107-->
+<!DOCTYPE таблица PUBLIC "BabaritskiyPA" "2.dtd">
+<myportfolio>
+	<mycompetencies>
+		<competencies in="HTML" value="good knowledge" />
+		<competencies in="CSS" value="good knowledge" />
+		<competencies in="PHP" value="good knowledge" />
+		<competencies in="SQL" value="good knowledge" />
+		<competencies in="Python" value="normal knowledge" />
+		<competencies in="JavaScript" value="below average knowledge" />
+	</mycompetencies>
+</myportfolio>

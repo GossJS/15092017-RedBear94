@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Бабарицкий Павел s4107-->
+<!ELEMENT myportfolio (mycompetencies)+>
+<!ELEMENT mycompetencies (competencies)+>
+<!ELEMENT competencies EMPTY>
+
+<!ATTLIST competencies in CDATA #REQUIRED>
+<!ATTLIST competencies value CDATA #REQUIRED>
