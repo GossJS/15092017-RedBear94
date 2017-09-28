@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  
+<!-- определение атрибутов -->
+<xs:attribute name="дисциплина" type="xs:string"/>
+<xs:attribute name="имя" type="xs:string"/>
+
+<!-- определение элементов -->
+<xs:element name="таблица" type="tableType"/>
+  
+<xs:complexType name="markType">
+    <xs:simpleContent>
+		<xs:extension base="xs:positiveInteger">
+        <xs:attribute ref="дисциплина" use="required"/>
+		</xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+  
+<xs:complexType name="studentType">
+	<xs:sequence>
+		<xs:element type="markType" name="отметка" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+	<xs:attribute ref="имя" use="required"/>
+</xs:complexType>
+  
+<xs:complexType name="tableType">
+	<xs:sequence>
+		<xs:element type="studentType" name="студент" maxOccurs="unbounded" minOccurs="0"/>
+	</xs:sequence>
+</xs:complexType>
+  
+</xs:schema>
